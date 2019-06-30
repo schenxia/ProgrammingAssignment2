@@ -27,7 +27,7 @@ cacheSolve <- function(x) {
                 message("getting cached data")
                 return(inv_matrix);
         }
-        new_matrix = x$get();
+        new_matrix <- x$get();
         inv_matrix <- solve(new_matrix);
         x$set_inv(inv_matrix);
         inv_matrix;
